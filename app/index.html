@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Timur Manyanov - Web Developer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- build:css({.tmp,app}) styles/main.css -->
+		<link rel="stylesheet" href="styles/app.css">
+		<!-- endbuild -->
+		<!-- build:js scripts/app-pre.js -->
+		<script src="bower_components/prefix-free/prefixfree.js"></script>
+		<script src="scripts/modernizr-custom.js"></script>
+        <!-- endbuild -->
+		<noscript>
+			<link rel="stylesheet" href="styles/styleNoJS.css">
+		</noscript>
+	</head>
+	<body>
+
+		<header class="my-header">
+			<section class="my-info">
+				<img src="images/Timur-Manyanov-photo.jpg" class="my-photo">
+				<div class="my-name">Timur Manyanov</div>
+				<div class="my-job">Web Developer</div>
+			</section>
+		</header>
+
+		<main class="container">
+			<div id="slider" class="sl-slider-wrapper">
+
+				<div class="sl-slider">
+
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-1"></div>
+							<h2>2GIS Online</h2>
+							<div class="content">
+								<blockquote>
+									<p>
+										&laquo;With more than 22 million registered users, 2GIS is a developer of electronic directory guides in more than 200 cities in Russia, Ukraine, Kazakhstan, Italy, Cyprus and the Czech Republic.
+										<br>
+										The company provides 3D maps and is a complete, verified and constantly updated directory of organizations with detailed city maps.&raquo;
+									</p>
+									<cite><a href="http://mashable.com/2013/11/14/russia-startups/" target="_blank">Mashable.com</a></cite>
+									<p>
+										2GIS Online frontend runs on top of Knockout.js framework that sends ajax calls to 2GIS API backend.
+									</p>
+								</blockquote>
+								<div class="links">
+									<p>Maps in different languages:</p>
+									<p><a href="http://2gis.ru" target="_blank" class="goto">Russian maps (ru)</a></p>
+									<p><a href="http://2gis.it" target="_blank" class="goto">Map of Venecia (it)</a></p>
+									<p><a href="http://2gis.cz" target="_blank" class="goto">Map of Praha (cz)</a></p>
+									<p><a href="http://2gis.com.cy" target="_blank" class="goto">Map of Limasson, Cyprus (en)</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-2"></div>
+							<h2>Flamp</h2>
+							<div class="content">
+								<blockquote>
+									<p>
+										Flamp is a Russian startup where people write reviews on places they visit. Visitors mark these places with stars that define company rating. If you don't know where to go &mdash; you can use Flamp.
+									</p>
+									<p>
+										Flamp gets all the data about POIs from 2GIS API.
+									</p>
+								</blockquote>
+								<div class="links">
+									<a href="http://flamp.ru" target="_blank" class="goto">view flamp.ru</a>
+									<a href="http://moscow.flamp.ru/mode/mobile" target="_blank" class="goto">mobile version</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-3"></div>
+							<h2>New 2GIS Online (beta)</h2>
+							<div class="content">
+								<blockquote>
+									<p>
+										Absolutely new local search system with new design. We have created a brand new javascript frontend/backend framework to develop this version of 2GIS Online. Framework uses node.js and reuses the dynamic code for a static SEO-version as well.
+									</p>
+								</blockquote>
+								<div class="links">
+									<a href="http://beta.2gis.ru" target="_blank" class="goto">take a peek</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+						<div class="sl-slide-inner">
+							<div class="bg-img bg-img-4"></div>
+							<h2>Drop a Meteor on Earth!</h2>
+							<div class="content">
+								<blockquote>
+									<p>
+										At the end of 2012 the end of the world was predicted but never happened. So I decided to make it on my own just for fun with the help of parallax and nice graphics (that was created by my fellow designer <a href="http://www.behance.net/briskly_ru">Valery Schuchkin</a>).
+									</p>
+								</blockquote>
+								<div class="links">
+									<a href="http://darkwebdev.github.io/armageddon" target="_blank" class="goto">Drop it!</a>
+									<a href="https://github.com/darkwebdev/armageddon" target="_blank" class="goto">Sources on Github</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div><!-- /sl-slider -->
+
+				<nav id="nav-arrows" class="nav-arrows">
+					<span class="nav-arrow-prev">Previous</span>
+					<span class="nav-arrow-next">Next</span>
+				</nav>
+				<nav id="nav-dots" class="nav-dots">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</nav>
+
+			</div><!-- /slider-wrapper -->
+
+		</main>
+
+		<!-- build:js scripts/app.js -->
+		<script src="bower_components/jquery/jquery.js"></script>
+		<script src="scripts/jquery.ba-cond.js"></script>
+		<script src="scripts/jquery.slitslider.js"></script>
+		<script src="scripts/main.js"></script>
+		<!-- endbuild -->
+	</body>
+</html>

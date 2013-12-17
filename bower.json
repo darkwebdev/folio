@@ -1,0 +1,10 @@
+{
+  "name": "folio",
+  "version": "0.0.1",
+  "dependencies": {
+    "modernizr": "~2.6.2",
+    "jquery": "2",
+    "prefix-free": "gh-pages"
+  },
+  "devDependencies": {}
+}
