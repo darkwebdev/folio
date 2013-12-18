@@ -168,51 +168,6 @@ a {
 	position: relative;
 }
 
-.sl-slider h2 {
-	font-size: 34px;
-	text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
-}
-
-.sl-slider blockquote {
-	font-size: 20px;
-	padding-top: 10px;
-	font-weight: 300;
-	text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
-}
-.sl-slider blockquote cite,
-.sl-slider .goto {
-	display: inline-block;
-	margin-top: 30px;
-	font-size: 16px;
-	font-weight: 700;
-	font-style: normal;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-}
-	.sl-slider .goto:after {
-		content: '→';
-		display: inline-block;
-		vertical-align: middle;
-		margin-left: 8px;
-	}
-    .sl-slide blockquote cite {
-        display: block;
-        margin: 0;
-        padding: 1em 15em 1em 0;
-        font-size: 10px;
-        font-style: normal;
-        text-transform: uppercase;
-        text-align: right;
-    }
-
-.sl-slider .links {
-	padding-top: 0;
-	font-size: 20px;
-	font-weight: 700;
-}
-
-/* Decorations */
-
 .logo {
     position: absolute;
     margin: 0 0 0 -110px;
@@ -227,19 +182,18 @@ a {
     background-repeat: no-repeat;
 }
 
-.sl-slide h2 {
+.sl-slider h2 {
     position: absolute;
     padding: 20px;
-    margin: 0 0 -120px 0;
+    margin: 0 0 -120px .2em;
+    width: 80%;
+    left: 10%;
     top: 35%;
     color: #000;
     text-shadow: 0 0 1px #000;
     font-size: 34px;
     font-weight: 700;
     letter-spacing: 13px;
-    /*text-transform: uppercase;*/
-    width: 80%;
-    left: 10%;
     text-align: center;
     line-height: 50px;
 }
@@ -248,7 +202,7 @@ a {
     position: absolute;
     padding: 0;
     width: 100%;
-    bottom: 50%;
+    bottom: 42%;
     text-align: center;
     left: 0;
     font-weight: 400;
@@ -259,26 +213,63 @@ a {
     z-index: 2;
 }
 
-.sl-slide blockquote p {
-    margin: 0 auto;
-    width: 60%;
-    max-width: 960px;
-    position: relative;
+.sl-slider blockquote {
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: 300;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
 }
+    .sl-slide blockquote p {
+        margin: 0 auto;
+        width: 60%;
+        max-width: 960px;
+        position: relative;
+    }
+        .sl-slide blockquote p:before {
+            color: #f0f0f0;
+            color: rgba(244,244,244,0.65);
+            font-family: "Bookman Old Style", Bookman, Garamond, serif;
+            position: absolute;
+            line-height: 60px;
+            width: 75px;
+            height: 75px;
+            font-size: 200px;
+            z-index: -1;
+            left: -80px;
+            top: 35px;
+            content: '\201C';
+        }
+    .sl-slider .goto {
+        display: inline-block;
+        margin-top: 30px;
+        font-size: 16px;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+        .sl-slider .goto:after {
+            content: '→';
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 8px;
+        }
+        .sl-slide blockquote cite {
+            display: block;
+            margin: 0;
+            padding: 1em 15em 1em 0;
+            font-size: 10px;
+            font-weight: 700;
+            font-style: normal;
+            text-transform: uppercase;
+            text-align: right;
+            letter-spacing: 4px;
+        }
 
-.sl-slide blockquote p:before {
-    color: #f0f0f0;
-    color: rgba(244,244,244,0.65);
-    font-family: "Bookman Old Style", Bookman, Garamond, serif;
-    position: absolute;
-    line-height: 60px;
-    width: 75px;
-    height: 75px;
-    font-size: 200px;
-    z-index: -1;
-    left: -80px;
-    top: 35px;
-    content: '\201C';
+.sl-slider .links {
+	padding-top: 0;
+	font-size: 20px;
+	font-weight: 700;
 }
 
 /* Custom navigation arrows */
@@ -297,22 +288,19 @@ a {
 
 	transform: rotate(45deg);
 }
-
-.nav-arrows span:hover {
-	border-color: rgba(150,150,150, .9);
-}
-
-.nav-arrows span.nav-arrow-prev {
-	left: 5%;
-	border-right: none;
-	border-top: none;
-}
-
-.nav-arrows span.nav-arrow-next {
-	right: 5%;
-	border-left: none;
-	border-bottom: none;
-}
+    .nav-arrows span:hover {
+        border-color: rgba(150,150,150, .9);
+    }
+    .nav-arrows span.nav-arrow-prev {
+        left: 5%;
+        border-right: none;
+        border-top: none;
+    }
+    .nav-arrows span.nav-arrow-next {
+        right: 5%;
+        border-left: none;
+        border-bottom: none;
+    }
 
 /* Custom navigation dots */
 
@@ -325,42 +313,39 @@ a {
 	left: 0;
 	z-index: 1000;
 }
-
-.nav-dots span {
-	display: inline-block;
-	position: relative;
-	width: 16px;
-	height: 16px;
-	border-radius: 50%;
-	background: #ddd;
-	cursor: pointer;
-	background: rgba(150,150,150,0.1);
-	margin: 6px;
-	box-shadow:
-		0 1px 1px rgba(255,255,255,0.4), 
-		inset 0 1px 1px rgba(0,0,0,0.1),
-		0 0 0 2px rgba(255,255,255,0.5);
-	transition: all 0.2s;
-}
-
-.nav-dots span.nav-dot-current,
-.nav-dots span:hover {
-	box-shadow: 
-		0 1px 1px rgba(255,255,255,0.4), 
-		inset 0 1px 1px rgba(0,0,0,0.1),
-		0 0 0 5px rgba(255,255,255,0.5);
-}
-
-.nav-dots span.nav-dot-current:after {
-	content: "";
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	top: 3px;
-	left: 3px;
-	border-radius: 50%;
-	background: rgba(255,255,255,0.8);
-}
+    .nav-dots span {
+        display: inline-block;
+        position: relative;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #ddd;
+        cursor: pointer;
+        background: rgba(150,150,150,0.1);
+        margin: 6px;
+        box-shadow:
+            0 1px 1px rgba(255,255,255,0.4),
+            inset 0 1px 1px rgba(0,0,0,0.1),
+            0 0 0 2px rgba(255,255,255,0.5);
+        transition: all 0.2s;
+    }
+        .nav-dots span.nav-dot-current,
+        .nav-dots span:hover {
+            box-shadow:
+                0 1px 1px rgba(255,255,255,0.4),
+                inset 0 1px 1px rgba(0,0,0,0.1),
+                0 0 0 5px rgba(255,255,255,0.5);
+        }
+        .nav-dots span.nav-dot-current:after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            top: 3px;
+            left: 3px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.8);
+        }
 
 
 /* Custom colors for slides */
@@ -482,7 +467,7 @@ a {
 }
 .my-info {
 	margin: 0 auto;
-	padding: 0 30px;
+	padding: 0 5px 0 30px;
 	width: 60%;
     max-width: 960px;
 }
@@ -506,6 +491,10 @@ a {
 	.sl-slider .links {
 		font-size: 12px;
 	}
+    .sl-slider .goto {
+        margin-top: 10px;
+        font-size: 10px;
+    }
 
     .sl-slide blockquote p:before {
         line-height: 10px;
