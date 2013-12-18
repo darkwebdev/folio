@@ -250,9 +250,9 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     dot: true,
-                    dest: '<%= yeoman.app %>/scripts',
+                    dest: '<%= yeoman.app %>',
                     src: '<%= yeoman.app %>/bower_components/modernizr/modernizr.js',
-                    rename: function() { return '<%= yeoman.app %>/scripts/modernizr-custom.js'; }
+                    rename: function() { return '<%= yeoman.app %>/scripts/vendor/modernizr-custom.js'; }
                 }]
             },
             dist: {
