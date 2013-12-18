@@ -33,6 +33,7 @@ module.exports = function (grunt) {
                     livereload: '<%= connect.options.livereload %>'
                 },
                 files: [
+                    '<%= yeoman.app %>/Gruntfile.js',
                     '<%= yeoman.app %>/*.html',
                     '.tmp/styles/{,*/}*.css',
                     '{.tmp,<%= yeoman.app %>}/scripts/{,*/}*.js',
@@ -132,19 +133,6 @@ module.exports = function (grunt) {
                 }
             }
         },*/
-        /*autoprefixer: {
-            options: {
-                browsers: ['last 1 version']
-            },
-            dist: {
-                files: [{
-                    expand: true,
-                    cwd: '.tmp/styles/',
-                    src: '{,*//*}*.css',
-                    dest: '.tmp/styles/'
-                }]
-            }
-        },*/
         // not used since Uglify task does concat,
         // but still available if needed
         /*concat: {
@@ -167,9 +155,9 @@ module.exports = function (grunt) {
                 files: {
                     src: [
                         '<%= yeoman.dist %>/scripts/{,*/}*.js',
-                        '<%= yeoman.dist %>/styles/{,*/}*.css',
-                        '<%= yeoman.dist %>/images/{,*/}*.{gif,jpeg,jpg,png,webp}',
-                        '<%= yeoman.dist %>/styles/fonts/{,*/}*.*'
+                        '<%= yeoman.dist %>/styles/{,*/}*.css'//,
+//                        '<%= yeoman.dist %>/images/{,*/}*.{gif,jpeg,jpg,png,webp}',
+//                        '<%= yeoman.dist %>/styles/fonts/{,*/}*.*'
                     ]
                 }
             }
@@ -279,11 +267,11 @@ module.exports = function (grunt) {
         },
         modernizr: {
             devFile: '<%= yeoman.app %>/bower_components/modernizr/modernizr.js',
-            outputFile: '<%= yeoman.app %>/scripts/modernizr-custom.js',
+            outputFile: '<%= yeoman.app %>/scripts/vendor/modernizr-custom.js',
             files: [
                 '<%= yeoman.app %>/scripts/{,*/}*.js',
-                '<%= yeoman.app %>/styles/{,*/}*.css'/*,
-                '!<%= yeoman.dist %>/scripts/vendor*//*'*/
+                '<%= yeoman.app %>/styles/{,*/}*.css',
+                '!<%= yeoman.app %>/scripts/vendor'
             ],
             extra : {
                 shiv: true,
