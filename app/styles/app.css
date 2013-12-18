@@ -110,12 +110,12 @@ a {
 
 .sl-slide-horizontal .sl-content-slice:first-child {
 	top: -200px;
-	padding: 200px 200px 0px 200px;
+	padding: 200px 200px 0 200px;
 }
 
 .sl-slide-horizontal .sl-content-slice:nth-child(2) {
 	top: 50%;
-	padding: 0px 200px 200px 200px;
+	padding: 0 200px 200px 200px;
 }
 
 /* Vertical slice */
@@ -129,12 +129,12 @@ a {
 
 .sl-slide-vertical .sl-content-slice:first-child {
 	left: -200px;
-	padding: 200px 0px 200px 200px;
+	padding: 200px 0 200px 200px;
 }
 
 .sl-slide-vertical .sl-content-slice:nth-child(2) {
 	left: 50%;
-	padding: 200px 200px 200px 0px;
+	padding: 200px 200px 200px 0;
 }
 
 /* Content wrapper */
@@ -428,7 +428,7 @@ a {
 /* Animations for content elements */
 
 .sl-trans-elems .logo {
-    animation: roll 1s ease-out both, fadeIn 1s ease-out both;
+    animation: roll 1s ease-out both;
 }
 .sl-trans-back-elems .logo {
     animation: scaleDown 1s ease-in-out both;
@@ -446,23 +446,23 @@ a {
 .sl-trans-back-elems .content {
 	animation: fadeOut 1s linear both;
 }
-@keyframes roll{
+@keyframes roll {
     0% {transform: translateX(500px) rotate(360deg); opacity: 0;}
     100% {transform: translateX(0px) rotate(0deg); opacity: 1;}
 }
-@keyframes scaleDown{
+@keyframes scaleDown {
     0% {transform: scale(1);}
     100% {transform: scale(0.5);}
 }
-@keyframes moveUp{
+@keyframes moveUp {
 	0% {transform: translateY(40px);}
 	100% {transform: translateY(0px);}
 }
-@keyframes fadeIn{
+@keyframes fadeIn {
 	0% {opacity: 0;}
 	100% {opacity: 1;}
 }
-@keyframes fadeOut{
+@keyframes fadeOut {
 	0% {opacity: 1;}
 	100% {opacity: 0;}
 }
@@ -500,12 +500,12 @@ a {
 @media screen and (max-width: 660px) {
 
 	.sl-slider h2 {
-		font-size: 36px;
+		font-size: 26px;
 	}
 
 	.sl-slider blockquote,
 	.sl-slider .links {
-		font-size: 16px;
+		font-size: 12px;
 	}
 
     .sl-slide blockquote p:before {
