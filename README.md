@@ -7,17 +7,17 @@ My portfolio with slider
 
 First nodeJs & npm:
 
-sudo apt-get install python-software-properties python g++ make
-sudo add-apt-repository ppa:chris-lea/node.js
-sudo apt-get update
-sudo apt-get install nodejs npm
+<p><code>sudo apt-get install python-software-properties python g++ make</code>
+<p><code>sudo add-apt-repository ppa:chris-lea/node.js</code>
+<p><code>sudo apt-get update</code>
+<p><code>sudo apt-get install nodejs npm</code>
 
 Then bower & grunt:
 
-sudo npm install -g bower grunt grunt-cli
+<p><code>sudo npm install -g bower grunt grunt-cli</code>
 
 <h2>Build</h2>
 
-npm install
-bower install
-grunt build
+<p><code>npm install</code>
+<p><code>bower install</code>
+<p><code>grunt build</code>
