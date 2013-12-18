@@ -44,7 +44,7 @@ body {
 }
 
 a {
-	color: #bbb;
+	color: #222;
 	text-decoration: none;
 	font-weight: 700;
 }
@@ -385,6 +385,10 @@ a {
 .slide-2 blockquote:before {
     color: #222;
 }
+.slide-2 a,
+.slide-2 cite {
+    color: #fff;
+}
 
 .slide-3 .sl-slide-inner,
 .slide-3 .sl-content-slice {
@@ -405,6 +409,10 @@ a {
 }
 .slide-4 blockquote:before {
     color: #181854;
+}
+.slide-4 a,
+.slide-4 cite {
+    color: #fff;
 }
 
 
