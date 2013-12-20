@@ -3,6 +3,10 @@
 
     $(function() {
 
+        $('.my-header').on('click', function(){
+            $(this).toggleClass('active');
+        });
+
         var Page = (function() {
 
             var $navArrows = $('#nav-arrows'),
