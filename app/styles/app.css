@@ -550,19 +550,25 @@ h2 {
 
 .my-skills {
     position: absolute;
+    overflow: hidden;
     padding-top: 45px;
+    bottom: 130px;
+    top: 0;
     width: 60%;
     max-width: 960px;
     left: 20%;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 22px;
+    line-height: 38px;
 }
+    .my-header.active .my-skills {
+        bottom: 100px;
+    }
     .my-skills li span {
         background: #fff;
         color: rgb(0,150,150);
         display: inline-block;
         padding: 0 10px;
-        line-height: 30px;
+        line-height: 26px;
         margin-left: 1px;
     }
     .my-skills .tag {
@@ -571,6 +577,59 @@ h2 {
         padding-left: .8em;
         margin-left: 5px;
     }
+
+.my-contacts {
+    position: absolute;
+    right: 20%;
+    top: 20px;
+    width: 100px;
+    height: 50px;
+    font-size: 2em;
+    z-index: 9;
+}
+    .my-contacts h2 {
+        position: absolute;
+        top: -2em;
+        opacity: 0;
+        font-weight: normal;
+        letter-spacing: normal;
+        font-size: 27px;
+        transition: all .2s ease-out;
+    }
+        .my-contacts:hover h2 {
+            top: .5em;
+            opacity: 1;
+        }
+    .icon-mail {
+        position: absolute;
+        top: .15625em;
+        width: 1em;
+        height: .75em;
+        background-color: rgb(255, 255, 255);
+        transition: transform .2s ease-out;
+        right: 1.5em;
+    }
+        .icon-mail:before,
+        .icon-mail:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-width: .4em .5em;
+            border-style: solid;
+        }
+        .icon-mail:before {
+            top: 0;
+            border-color: rgb(0, 150, 150) transparent transparent;
+        }
+        .icon-mail:after {
+            top: -.0625em;
+            border-color: rgb(255, 255, 255) transparent transparent;
+        }
+        .my-contacts:hover .icon-mail {
+            transform: scale(2);
+        }
 
 /* Media Queries for custom slider */
 
