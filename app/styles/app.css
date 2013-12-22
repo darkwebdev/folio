@@ -565,7 +565,7 @@ h2 {
     .my-skills li {
         position: relative;
         padding-left: 12px;
-        margin: 10px 20px 10px 0;
+        margin: .8em 20px .8em 0;
         background: #fff;
         border-radius: 20px 0 0 20px;
     }
@@ -594,20 +594,24 @@ h2 {
         .my-skills li span {
             display: inline-block;
             padding: 0 10px;
-            line-height: 26px;
+            line-height: 1.3em;
             color: rgb(0,150,150);
             border-right: 1px solid rgb(0,150,150);
         }
 
 .my-contacts {
+    display: none;
     position: absolute;
-    right: 20%;
-    top: 20px;
-    width: 100px;
-    height: 50px;
+    right: -.6em;
+    top: 0.25em;
+    width: 3em;
+    height: 1.5em;
     font-size: 2em;
     z-index: 9;
 }
+    .my-header.active .my-contacts {
+        display: block;
+    }
     .my-contacts h2 {
         position: absolute;
         top: -2em;
@@ -618,7 +622,7 @@ h2 {
         transition: all .2s ease-out;
     }
         .my-contacts:hover h2 {
-            top: .5em;
+            top: 1em;
             opacity: 1;
         }
     .icon-mail {
