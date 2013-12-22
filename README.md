@@ -3,6 +3,8 @@ folio
 
 My portfolio with slider
 
+Working copy <a href="http://darkwebdev.com">here</a>
+
 <h2>Installation</h2>
 
 First nodeJs & npm:
