@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="styles/app.css">
 		<!-- endbuild -->
 		<!-- build:js scripts/app-pre.js -->
-		<script src="bower_components/prefix-free/prefixfree.js"></script>
+		<script src="bower_components/prefix-free/prefixfree.min.js"></script>
 		<script src="scripts/vendor/modernizr-custom.js"></script>
         <!-- endbuild -->
 		<noscript>
@@ -46,14 +46,14 @@
                         <span>responsive</span><span>mobile</span><span>retina</span><span>optimization</span>
                     </li>
                     <li class="level-4">
-                        <span>js</span><span>jQuery</span><span>backbone</span><span>mvc</span><span>ajax</span><span>json</span>
+                        <span>javascript</span><span>jQuery</span><span>backbone</span><span>mvc</span><span>ajax</span><span>json</span>
                     </li>
                 </ul>
 
                 <h2>Backend</h2>
                 <ul>
                     <li class="level-3">
-                        <span>nodeJs</span><span>npm</span><span>grunt</span><span>bower</span>
+                        <span>nodeJs</span><span>npm</span><span>grunt</span><span>gulp</span><span>bower</span>
                     </li>
                     <li class="level-2">
                         <span>python</span><span>django</span>
@@ -74,46 +74,49 @@
 				<div class="sl-slider">
 
 					<div class="sl-slide slide-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-						<div class="sl-slide-inner">
+                        <div class="sl-slide-inner">
                             <div class="logo"></div>
-							<h2>Online</h2>
-							<div class="content">
-								<blockquote>
-									<p>
-										&laquo;With more than 22 million registered users, 2GIS is a developer of electronic directory guides in more than 200 cities in Russia, Ukraine, Kazakhstan, Italy, Cyprus and the Czech Republic.
-										<br>
-										The company provides 3D maps and is a complete, verified and constantly updated directory of organizations with detailed city maps.&raquo;
-									</p>
-									<cite><a href="http://mashable.com/2013/11/14/russia-startups/" target="_blank">Mashable.com</a></cite>
-									<p>
-										2GIS Online frontend runs on top of Knockout.js framework that sends ajax calls to 2GIS API backend.
-									</p>
-								</blockquote>
-								<div class="links">
-									<p><a href="http://2gis.ru" target="_blank" class="goto">Russian maps (ru)</a></p>
-									<p><a href="http://2gis.it" target="_blank" class="goto">Map of Venecia (it)</a></p>
-									<p><a href="http://2gis.cz" target="_blank" class="goto">Map of Praha (cz)</a></p>
-									<p><a href="http://2gis.com.cy" target="_blank" class="goto">Map of Limasson, Cyprus (en)</a></p>
-								</div>
-							</div>
-						</div>
+                            <h2>Denkwerk</h2>
+                            <div class="content">
+                                <blockquote>
+                                    <p>
+                                        One of the best German digital agencies works with such brands as BMW, Zwilling, OBI, Deutsche Post, Deutsche Telekom, Stiebel Eltron, Vapiano, Germanwings and others
+                                    </p>
+                                </blockquote>
+                                <div class="links">
+                                    <a href="http://www.denkwerk.com/en/home/" target="_blank" class="goto">Homepage</a>
+                                </div>
+                            </div>
+                        </div>
 					</div>
 
 					<div class="sl-slide slide-2" data-orientation="vertical" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-						<div class="sl-slide-inner">
+                        <div class="sl-slide-inner">
                             <div class="logo"></div>
-							<h2>Beta</h2>
-							<div class="content">
-								<blockquote>
-									<p>
-										Absolutely new local search system with new design. We have created a brand new javascript frontend/backend framework to develop this version of 2GIS Online. Framework uses node.js and reuses the dynamic code for a static SEO-version as well.
-									</p>
-								</blockquote>
-								<div class="links">
-									<a href="http://beta.2gis.ru" target="_blank" class="goto">take a peek</a>
-								</div>
-							</div>
-						</div>
+                            <h2>Online</h2>
+                            <div class="content">
+                                <blockquote>
+                                    <p>
+                                        &laquo;With more than 22 million registered users, 2GIS is a developer of electronic directory guides in more than 200 cities in Russia, Ukraine, Kazakhstan, Italy, Cyprus and the Czech Republic.
+                                        <br>
+                                        The company provides 3D maps and is a complete, verified and constantly updated directory of organizations with detailed city maps.&raquo;
+                                    </p>
+                                    <cite><a href="http://mashable.com/2013/11/14/russia-startups/" target="_blank">Mashable.com</a></cite>
+                                    <p>
+                                        We have created a brand new isomorfic javascript framework to develop 2GIS Online. Framework uses node.js and reuses the dynamic code for a static SEO-version as well.
+                                    </p>
+                                </blockquote>
+                                <div class="links">
+                                    <p><a href="http://2gis.ru" target="_blank" class="goto">Russia</a></p>
+                                    <p><a href="http://2gis.ua" target="_blank" class="goto">Ukraine</a></p>
+                                    <p><a href="http://2gis.ae" target="_blank" class="goto">Arab Emirates</a></p>
+                                    <p><a href="http://2gis.it" target="_blank" class="goto">Italy</a></p>
+                                    <p><a href="http://2gis.cz" target="_blank" class="goto">Chech Republic</a></p>
+                                    <p><a href="http://2gis.com.cy" target="_blank" class="goto">Cyprus</a></p>
+                                    <p><a href="http://2gis.cl" target="_blank" class="goto">Chili</a></p>
+                                </div>
+                            </div>
+                        </div>
 					</div>
 
                     <div class="sl-slide slide-3" data-orientation="horizontal" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
@@ -172,7 +175,7 @@
 		</main>
 
 		<!-- build:js scripts/app.js -->
-		<script src="bower_components/jquery/jquery.js"></script>
+		<script src="bower_components/jquery/dist/jquery.js"></script>
 		<script src="scripts/jquery.ba-cond.js"></script>
 		<script src="scripts/jquery.slitslider.js"></script>
 		<script src="scripts/main.js"></script>
